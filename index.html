@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Raging Flame: Donate Button</title>
+<style type="text/css">
+form ul
+{
+	font-size:100%;list-style-type:none;margin:0;padding:0;width:100%;
+}
+
+form li
+{
+	display:block; margin:0;padding:4px 5px 2px 9px; position:relative;
+}
+
+form li:after
+{
+	clear:both;content:".";display:block;height:0;visibility:hidden;
+}
+
+.buttons
+{
+	clear:both;
+	display:block;
+	margin-top:10px;
+}
+
+* html form li
+{
+	height:1%;
+}
+
+* html .buttons
+{
+	height:1%;
+}
+
+* html form li div
+{
+	display:inline-block;
+}
+
+form li div
+{
+	color:#444;
+	margin:0 4px 0 0;
+	padding:0 0 8px;
+}
+
+form li span
+{
+	color:#444;
+	float:left;
+	margin:0 4px 0 0;
+	padding:0 0 8px;
+}
+
+
+.clear
+{
+	clear:both;
+}
+
+form li span label
+{
+	clear:both;
+	color:#444;
+	display:block;
+	font-size:9px;
+	line-height:9px;
+	margin:0;
+	padding-top:3px;
+}
+
+form li.section_break
+{
+	border-top:1px dotted #ccc;
+	margin-top:9px;
+	padding-bottom:0;
+	padding-left:9px;
+	padding-top:13px;
+	width:97% !important;
+}
+
+form ul li.first
+{
+	border-top:none !important;
+	margin-top:0 !important;
+	padding-top:0 !important;
+}
+
+
+/**** Buttons ****/
+input.button_text
+{
+	overflow:visible;
+	padding:0 7px;
+	width:auto;
+}
+
+.buttons input
+{
+	font-size:120%;
+	margin-right:5px;
+}
+
+/**** Inputs and Labels ****/
+label.description
+{
+	border:none;
+	color:#222;
+	display:block;
+	font-size:95%;
+	font-weight:700;
+	line-height:150%;
+	padding:0 0 1px;
+}
+
+span.symbol
+{
+	font-size:115%;
+	line-height:130%;
+}
+
+input.text
+{
+	background:#fff url(../../../images/shadow.gif) repeat-x top;
+	border-bottom:1px solid #ddd;
+	border-left:1px solid #c3c3c3;
+	border-right:1px solid #c3c3c3;
+	border-top:1px solid #7c7c7c;
+	color:#333;
+	font-size:100%;
+	margin:0;
+	padding:2px 0;
+}
+
+
+input.currency
+{
+	text-align:right;
+}
+</style>
+  </head>
+  <body>
+     <form id="" class="appnitro"  method="post" action="action.php">					
+        <ul>
+            <li id="li_1" >
+                <label class="description" for="element_1">Email </label>
+		        <div>
+			        <input id="element_1" name="email" class="element text" type="text" maxlength="255" value="" /> 
+		        </div> 
+		    </li>
+			<li id="li_2" >
+		        <label class="description" for="element_2">Donation </label>
+				<div>
+		            <span class="symbol">R</span>
+		            <span>
+			            <input id="element_2_1" name="rands" class="element text currency" size="10" value="" type="text" /> .					        
+		            </span>
+		            <span>
+			            <input id="element_2_2" name="cents" class="element text" size="2" maxlength="2" value="" type="text" />       
+		            </span>
+				</div>
+            </li>
+            <li class="buttons">
+                <input type="submit" name="submit" value="Donate" />
+            </li>
+        </ul>
+	</form>     
+  </body>
+</html>

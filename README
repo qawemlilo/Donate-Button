@@ -1,0 +1,40 @@
+/*
+**********************************************************
+Plugin: Donate Plugin
+Author: Qawelesizwe Mlilo
+Email: qawemlilo@gmail.com
+Description: A simple donate button for a payment gateway
+**********************************************************
+*/
+
+
+-----------------
+PLUGIN FILES: 
+----------------
+  index.html
+  action.php
+  config.php
+  mailer.php
+
+  
+index.html
+----------
+This file contains an html form that inputs email and donation amount.
+When submitted, the form sends post data to another file action.php.
+
+
+action.php 
+----------
+Action.php cannot be access directly by users because it holds sensitive information included via config.php
+Once action.php recieves data from index.php, data is validated and formated before being sent to Netcash.
+
+
+config.php
+----------
+Holds account information required by Netcash to process transactions.
+
+
+mailer.php
+----------
+Sends you an email with transaction details for all donations processed by Netcash.
+
